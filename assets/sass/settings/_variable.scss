@@ -1,0 +1,24 @@
+// theme font
+$theme-font: 'Poppins', sans-serif;
+
+// theme color
+$primary-color: #2f5846;
+$secondary-color: #ffe26a;
+$heading-color: #203339;
+$paragraph-color: #737677;
+$white-color: #ffffff;
+$black-color: #000000;
+$border-color: #eaeaea;
+
+// social media color
+$facebook: #3b5999;
+$twitter: #55acee;
+$instagram: #e4405f;
+$linkedin: #0077B5;
+$dribbble: #ea4c89;
+
+// google font
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+// transition
+$transition: all .3s ease-in;
