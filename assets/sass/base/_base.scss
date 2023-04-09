@@ -1,17 +1,19 @@
 /* author css */
 body {
     margin: 0;
-    color: $paragraph-color;
-    font-size: 16px;
+    color: $white-color;
+    background-color: $black-color;
+    font-size: 20px;
     font-family: $theme-font;
+    font-weight: 400;
 }
 
 h1 {
-    font-size: 60px;
+    font-size: 70px;
 }
 
 h2 {
-    font-size: 42px;
+    font-size: 50px;
 }
 
 h3 {
@@ -36,16 +38,15 @@ h3,
 h4,
 h5,
 h6 {
-    color: $heading-color;
-    font-family: $theme-font;
-    font-weight: 700;
-    text-transform: capitalize;
+    color: $white-color;
+    font-family: $heading-font;
+    text-transform: uppercase;
     line-height: 1.2;
     margin-bottom: 0;
 }
 
 p {
-    color: $paragraph-color;
+    color: $white-color;
     margin-bottom: 10px;
 }
 
