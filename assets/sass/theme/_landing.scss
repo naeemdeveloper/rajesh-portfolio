@@ -1,11 +1,35 @@
 /* landing */
 .menu-area {
-    padding-top: 60px;
+    padding-top: 50px;
+}
+
+.all-phone-hide {
+    @include all-phone {
+        display: none;
+    }
+}
+
+.tablet-hide {
+    @include tablet {
+        display: none;
+    }
+}
+
+.all-desktop-hide {
+    @include all-desktop {
+        display: none;
+    }
 }
 
 .header-area {
     padding-top: 100px;
+    @include tablet {
+        padding-top: 50px;
+    }
     .main-title {
+        @include tablet {
+            text-align: center;
+        }
         span {
             font-family: $theme-font;
             font-weight: 100;
@@ -15,6 +39,9 @@
     .header-content {
         padding-top: 50px;
         .section-title {
+            @include tablet {
+                text-align: center;
+            }
             span {
                 font-family: $theme-font;
                 font-weight: 100;
@@ -24,6 +51,20 @@
         ul.list-items,
         p {
             margin-top: 40px;
+        }
+
+        .header-image {
+            @include tablet {
+                padding: 150px 0;
+                background-image: url('../images/header-image-bg-tablet.png');
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: 90%;
+                img {
+                    width: 80%;
+                    margin: auto;
+                }
+            }
         }
     }
 }
@@ -42,10 +83,35 @@
 
 .workcloud-area {
     margin-top: -300px;
+    @include tablet {
+        margin-top: 50px;
+    }
+
+    .workcloud-image {
+        @include tablet {
+            padding: 150px 0;
+            background-image: url('../images/workcloud-image-bg-tablet.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 80%;
+            img {
+                width: 90%;
+                margin: auto;
+            }
+        }
+    }
+
     .workcloud-content {
         ul.list-items,
         p {
             margin-top: 40px;
+        }
+
+        .section-title {
+            @include tablet {
+                margin-top: 50px;
+                text-align: center;
+            }
         }
     }
 }
@@ -58,16 +124,41 @@
         margin-top: -300px;
     }
     @include desktop {
-        margin-top: -350px;
+        margin-top: -470px;
     }
 }
 
 .easyonepage-area {
     margin-top: -300px;
+    @include tablet {
+        margin-top: 0;
+    }
+
     .easyonepage-content {
         ul.list-items,
         p {
             margin-top: 40px;
+        }
+
+        .section-title {
+            @include tablet {
+                text-align: center;
+            }
+        }
+    }
+
+    .easyonepage-image {
+        @include tablet {
+            padding: 160px 0;
+            background-image: url('../images/easyonepage-image-bg-tablet.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 70%;
+            margin: 100px 0 50px;
+            img {
+                width: 80%;
+                margin: auto;
+            }
         }
     }
 }
@@ -86,10 +177,36 @@
 
 .connecting-area {
     margin-top: -300px;
+    @include tablet {
+        margin-top: 0px;
+    }
+
     .connecting-content {
         ul.list-items,
         p {
             margin-top: 40px;
+        }
+
+        .section-title {
+            @include tablet {
+                text-align: center;
+                margin-top: 30px;
+            }
+        }
+    }
+
+    .connecting-image {
+        @include tablet {
+            padding: 190px 0;
+            background-image: url('../images/connecting-image-bg-tablet.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 70%;
+            margin: 100px 0 50px;
+            img {
+                width: 80%;
+                margin: auto;
+            }
         }
     }
 }
@@ -110,9 +227,15 @@
     margin-top: 300px;
     padding-bottom: 70px;
     text-align: center;
+    @include tablet {
+        margin-top: 200px;
+    }
     span {
         text-transform: uppercase;
         position: relative;
+        @include tablet {
+            display: none;
+        }
         &::before {
             content: '';
             position: absolute;

@@ -96,34 +96,6 @@ nav .main-menu li {
     nav .main-menu li:hover a {
       color: #ffffff; } }
 
-.mean-container .mean-nav {
-  background: #ffffff; }
-  @media (min-width: 768px) and (max-width: 991.98px) {
-    .mean-container .mean-nav {
-      margin-top: 90px; } }
-  @media (min-width: 576px) and (max-width: 767.98px) {
-    .mean-container .mean-nav {
-      margin-top: 60px; } }
-  @media (max-width: 575.98px) {
-    .mean-container .mean-nav {
-      margin-top: 50px; } }
-
-.mean-container .mean-bar {
-  z-index: 0; }
-  .mean-container .mean-bar a.meanmenu-reveal {
-    background: #ffffff;
-    top: 8px;
-    right: 20px !important; }
-    @media (min-width: 768px) and (max-width: 991.98px) {
-      .mean-container .mean-bar a.meanmenu-reveal {
-        top: 15px; } }
-    @media (min-width: 576px) and (max-width: 767.98px) {
-      .mean-container .mean-bar a.meanmenu-reveal {
-        top: 2px; } }
-    @media (max-width: 575.98px) {
-      .mean-container .mean-bar a.meanmenu-reveal {
-        top: -3px; } }
-
 /* preloader */
 /* default */
 .back-to-top {
@@ -169,21 +141,52 @@ nav .main-menu li {
 
 /* landing */
 .menu-area {
-  padding-top: 60px; }
+  padding-top: 50px; }
+
+@media (max-width: 767.98px) {
+  .all-phone-hide {
+    display: none; } }
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .tablet-hide {
+    display: none; } }
+
+@media (min-width: 992px) {
+  .all-desktop-hide {
+    display: none; } }
 
 .header-area {
   padding-top: 100px; }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    .header-area {
+      padding-top: 50px; } }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    .header-area .main-title {
+      text-align: center; } }
   .header-area .main-title span {
     font-family: "Inter", sans-serif;
     font-weight: 100; }
   .header-area .header-content {
     padding-top: 50px; }
+    @media (min-width: 768px) and (max-width: 991.98px) {
+      .header-area .header-content .section-title {
+        text-align: center; } }
     .header-area .header-content .section-title span {
       font-family: "Inter", sans-serif;
       font-weight: 100; }
     .header-area .header-content ul.list-items,
     .header-area .header-content p {
       margin-top: 40px; }
+    @media (min-width: 768px) and (max-width: 991.98px) {
+      .header-area .header-content .header-image {
+        padding: 150px 0;
+        background-image: url("../images/header-image-bg-tablet.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 90%; }
+        .header-area .header-content .header-image img {
+          width: 80%;
+          margin: auto; } }
 
 .shape-1 {
   margin-top: -200px;
@@ -198,9 +201,26 @@ nav .main-menu li {
 
 .workcloud-area {
   margin-top: -300px; }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    .workcloud-area {
+      margin-top: 50px; } }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    .workcloud-area .workcloud-image {
+      padding: 150px 0;
+      background-image: url("../images/workcloud-image-bg-tablet.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 80%; }
+      .workcloud-area .workcloud-image img {
+        width: 90%;
+        margin: auto; } }
   .workcloud-area .workcloud-content ul.list-items,
   .workcloud-area .workcloud-content p {
     margin-top: 40px; }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    .workcloud-area .workcloud-content .section-title {
+      margin-top: 50px;
+      text-align: center; } }
 
 .shape-2 {
   margin-top: -200px;
@@ -211,13 +231,30 @@ nav .main-menu li {
       margin-top: -300px; } }
   @media (min-width: 992px) and (max-width: 1199.98px) {
     .shape-2 {
-      margin-top: -350px; } }
+      margin-top: -470px; } }
 
 .easyonepage-area {
   margin-top: -300px; }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    .easyonepage-area {
+      margin-top: 0; } }
   .easyonepage-area .easyonepage-content ul.list-items,
   .easyonepage-area .easyonepage-content p {
     margin-top: 40px; }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    .easyonepage-area .easyonepage-content .section-title {
+      text-align: center; } }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    .easyonepage-area .easyonepage-image {
+      padding: 160px 0;
+      background-image: url("../images/easyonepage-image-bg-tablet.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 70%;
+      margin: 100px 0 50px; }
+      .easyonepage-area .easyonepage-image img {
+        width: 80%;
+        margin: auto; } }
 
 .shape-3 {
   margin-top: -200px;
@@ -232,9 +269,27 @@ nav .main-menu li {
 
 .connecting-area {
   margin-top: -300px; }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    .connecting-area {
+      margin-top: 0px; } }
   .connecting-area .connecting-content ul.list-items,
   .connecting-area .connecting-content p {
     margin-top: 40px; }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    .connecting-area .connecting-content .section-title {
+      text-align: center;
+      margin-top: 30px; } }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    .connecting-area .connecting-image {
+      padding: 190px 0;
+      background-image: url("../images/connecting-image-bg-tablet.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 70%;
+      margin: 100px 0 50px; }
+      .connecting-area .connecting-image img {
+        width: 80%;
+        margin: auto; } }
 
 .shape-4 {
   margin-top: -250px;
@@ -251,9 +306,15 @@ nav .main-menu li {
   margin-top: 300px;
   padding-bottom: 70px;
   text-align: center; }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    .footer-area {
+      margin-top: 200px; } }
   .footer-area span {
     text-transform: uppercase;
     position: relative; }
+    @media (min-width: 768px) and (max-width: 991.98px) {
+      .footer-area span {
+        display: none; } }
     .footer-area span::before {
       content: '';
       position: absolute;
