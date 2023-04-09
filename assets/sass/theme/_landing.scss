@@ -5,11 +5,133 @@
 
 .header-area {
     padding-top: 100px;
+    .main-title {
+        span {
+            font-family: $theme-font;
+            font-weight: 100;
+        }
+    }
+
     .header-content {
         padding-top: 50px;
+        .section-title {
+            span {
+                font-family: $theme-font;
+                font-weight: 100;
+            }
+        }
+
         ul.list-items,
         p {
             margin-top: 40px;
+        }
+    }
+}
+
+.shape-1 {
+    margin-top: -200px;
+    z-index: -1;
+    position: relative;
+    @include screen-1200 {
+        margin-top: -300px;
+    }
+    @include desktop {
+        margin-top: -350px;
+    }
+}
+
+.workcloud-area {
+    margin-top: -300px;
+    .workcloud-content {
+        ul.list-items,
+        p {
+            margin-top: 40px;
+        }
+    }
+}
+
+.shape-2 {
+    margin-top: -200px;
+    z-index: -1;
+    position: relative;
+    @include screen-1200 {
+        margin-top: -300px;
+    }
+    @include desktop {
+        margin-top: -350px;
+    }
+}
+
+.easyonepage-area {
+    margin-top: -300px;
+    .easyonepage-content {
+        ul.list-items,
+        p {
+            margin-top: 40px;
+        }
+    }
+}
+
+.shape-3 {
+    margin-top: -200px;
+    z-index: -1;
+    position: relative;
+    @include screen-1200 {
+        margin-top: -250px;
+    }
+    @include desktop {
+        margin-top: -350px;
+    }
+}
+
+.connecting-area {
+    margin-top: -300px;
+    .connecting-content {
+        ul.list-items,
+        p {
+            margin-top: 40px;
+        }
+    }
+}
+
+.shape-4 {
+    margin-top: -250px;
+    z-index: -1;
+    position: relative;
+    @include screen-1200 {
+        margin-top: -350px;
+    }
+    @include desktop {
+        margin-top: -400px;
+    }
+}
+
+.footer-area {
+    margin-top: 300px;
+    padding-bottom: 70px;
+    text-align: center;
+    span {
+        text-transform: uppercase;
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            bottom: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 10px;
+            height: 10px;
+            background-color: $white-color;
+            border-radius: 50%;
+        }
+    }
+
+    .copyright {
+        margin-top: 80px;
+        p {
+            font-size: 18px;
+            font-weight: 300;
+            color: rgba(255,255,255,.3);
         }
     }
 }

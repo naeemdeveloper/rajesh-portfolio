@@ -4,7 +4,7 @@
     right: 50px;
     bottom: 50px;
     color: $white-color;
-    background-color: $white-color;
+    background-color: rgba($white-color, .2);
     font-size: 30px;
     font-weight: 400;
     width: 50px;
@@ -27,5 +27,24 @@
 
     &:hover {
         background-color: $white-color;
+    }
+}
+
+.primary-btn {
+    color: $white-color;
+    text-decoration: none;
+    margin-top: 30px;
+    display: inline-block;
+    transition: $transition;
+    display: flex;
+    align-items: center;
+    &:hover {
+        color: $white-color;
+    }
+
+    img {
+        width: auto;
+        height: 20px;
+        margin-left: 15px;
     }
 }
