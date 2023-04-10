@@ -3,11 +3,14 @@
     "use strict"
     $(document).ready(function () {
 
-        // mobile menu
-        $('#mobile-menu').meanmenu({
-            meanMenuContainer: '.mobile-menu',
-            meanScreenWidth: "991.98",
-            onePage: false
+        // menu toggle bar
+        $(".menu-toggle-bar").on('click', function(){
+            $(this).toggleClass("active");
+        });
+
+        // mobile menu toogle bar
+        $(".menu-toggle-bar").on('click', function(){
+            $(".mobile-menu").toggleClass("active");
         });
 
     });

@@ -10,10 +10,19 @@ body {
 
 h1 {
     font-size: 70px;
+    @include all-phone {
+        font-size: 50px;
+    }
+    @include portrait-phone {
+        font-size: 40px;
+    }
 }
 
 h2 {
     font-size: 50px;
+    @include all-phone {
+        font-size: 36px;
+    }
 }
 
 h3 {

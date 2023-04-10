@@ -17,33 +17,38 @@
     <link rel="stylesheet" href="assets/css/animate.css">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/css/magnific-popup.css">
-    <link rel="stylesheet" href="assets/css/meanmenu.css">
-    <link rel="stylesheet" href="assets/css/slick.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
     <!-- preloader starts -->
-    <div class="preloader" id="preloader"></div>
+    <div id="preloader">
+        <div id="loader"></div>
+    </div>
 
     <!-- menu area starts -->
-    <div class="menu-area">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 d-none d-lg-block">
-                    <nav id="mobile-menu">
-                        <ul class="main-menu">
-                            <li><a href="#">home</a></li>
-                            <li><a href="#">about me</a></li>
-                            <li><a href="#">contact</a></li>
-                        </ul>
-                    </nav>
+    <div class="container">
+        <div class="menu-area">
+            <div class="menu-toggle-bar">
+                <div class="custom-bars">
+                    <div class="custom-bar bar-1"></div>
+                    <div class="custom-bar bar-2"></div>
+                    <div class="custom-bar bar-3"></div>
                 </div>
-            </div>
-        </div>
+            </div>     
 
-        <div class="mobile-menu"></div>
+            <ul class="main-menu">
+                <li><a href="#">home</a></li>
+                <li><a href="#">about me</a></li>
+                <li><a href="#">contect</a></li>
+            </ul>
+            
+            <ul class="mobile-menu">
+                <li><a href="#">home</a></li>
+                <li><a href="#">about me</a></li>
+                <li><a href="#">contect</a></li>
+            </ul>
+        </div>
     </div>
 
     <!-- header area starts -->
@@ -59,8 +64,14 @@
 
             <div class="header-content">
                 <div class="row">
-                    <div class="col-12">
-                        <div class="header-image all-desktop-hide">
+                    <div class="col-12 all-desktop-hide tablet-hide">
+                        <div class="header-image">
+                            <img src="assets/images/header-mobile.png" alt="header-image">
+                        </div>
+                    </div>
+                    
+                    <div class="col-12 all-desktop-hide all-phone-hide">
+                        <div class="header-image">
                             <img src="assets/images/header-image.png" alt="header-image">
                         </div>
                     </div>
@@ -108,7 +119,13 @@
         <div class="container">
             <div class="workcloud-content">
                 <div class="row">
-                    <div class="col-lg-7">
+                    <div class="col-12 all-desktop-hide tablet-hide">
+                        <div class="workcloud-image">
+                            <img src="assets/images/workcloud-mobile.png" alt="workcloud-image">
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-7 all-phone-hide">
                         <div class="workcloud-image">
                             <img src="assets/images/workcloud-image.png" alt="workcloud-image">
                         </div>
@@ -151,7 +168,13 @@
         <div class="container">
             <div class="easyonepage-content">
                 <div class="row">
-                    <div class="col-12 all-desktop-hide">
+                    <div class="col-12 all-desktop-hide tablet-hide">
+                        <div class="easyonepage-image">
+                            <img src="assets/images/easyonepage-mobile.png" alt="easyonepage-image">
+                        </div>
+                    </div>
+                    
+                    <div class="col-12 all-desktop-hide all-phone-hide">
                         <div class="easyonepage-image">
                             <img src="assets/images/easyonepage-image.png" alt="easyonepage-image">
                         </div>
@@ -200,7 +223,13 @@
         <div class="container">
             <div class="connecting-content">
                 <div class="row">
-                    <div class="col-lg-7">
+                    <div class="col-12 all-desktop-hide tablet-hide">
+                        <div class="connecting-image">
+                            <img src="assets/images/connecting-mobile.png" alt="c-image">
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-7 all-phone-hide">
                         <div class="connecting-image">
                             <img src="assets/images/connecting-image.png" alt="c-image">
                         </div>
@@ -258,12 +287,7 @@
     <!-- javascript files -->
     <script src="assets/js/vendor/jquery-2.2.4.min.js"></script>
     <script src="assets/js/vendor/bootstrap.min.js"></script>
-    <script src="assets/js/vendor/counterup.min.js"></script>
     <script src="assets/js/vendor/easing.min.js"></script>
-    <script src="assets/js/vendor/magnific-popup.js"></script>
-    <script src="assets/js/vendor/meanmenu.min.js"></script>
-    <script src="assets/js/vendor/slick.min.js"></script>
-    <script src="assets/js/vendor/waypoints.min.js"></script>
     <script src="assets/js/vendor/wow.min.js"></script>
     <script src="assets/js/main.js"></script>
 </body>

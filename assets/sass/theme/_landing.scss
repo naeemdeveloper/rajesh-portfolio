@@ -1,33 +1,137 @@
 /* landing */
 .menu-area {
     padding-top: 50px;
-}
 
-.all-phone-hide {
-    @include all-phone {
+    .menu-toggle-bar {
+        background-color: $black-color;
+        display: inline-block;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: $transition;
+        width: 40px;
+        height: 40px;
+        z-index: 9999;
+        position: absolute;
+        top: 50px;
+        left: 50%;
+        transform: translateX(-50%);
         display: none;
+        @include tablet {
+            display: block;
+        }
+        @include all-phone {
+            display: block;
+        }
+
+        &.active {
+            .bar-1 {
+                transform: rotate(45deg);
+                top: 8px;
+            }
+            .bar-2 {
+                opacity: 0;
+                visibility: hidden;
+            }
+            .bar-3 {
+                transform: rotate(-45deg);
+                top: -8px;
+            }
+        }
+
+        .custom-bars {
+            padding-top: 5px;
+            padding-left: 8px;
+            .custom-bar {
+                width: 24px;
+                height: 2px;
+                background-color: $white-color;
+                margin: 6px 0;
+                transition: $transition;
+                position: relative;
+                .bar-1 {
+                    transform: rotate(0);
+                }
+                .bar-3 {
+                    transform: rotate(0);
+                }
+            }
+        }
     }
-}
 
-.tablet-hide {
-    @include tablet {
-        display: none;
+    .main-menu {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        text-align: left;
+        position: relative;
+        transition: $transition;
+        @include tablet {
+            display: none;
+        }
+        @include all-phone {
+            display: none;
+        }
+
+        li {
+            display: block;
+            a {
+                font-size: 20px;
+                font-weight: 400;
+                text-decoration: none;
+                text-transform: uppercase;
+                color: $white-color;
+                display: block;
+                transition: .2s;
+            }
+        }
     }
-}
 
-.all-desktop-hide {
-    @include all-desktop {
-        display: none;
+    .mobile-menu {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 0;
+        background-color: $black-color;
+        text-align: center;
+        transition: $transition;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 999;
+        @include all-desktop {
+            display: none;
+        }
+
+        &.active {
+            height: 100vh;
+            opacity: 1;
+            visibility: visible;
+        }
+
+        li {
+            position: relative;
+            top: 40%;
+            a {
+                color: $white-color;
+                font-size: 24px;
+                text-transform: uppercase;
+                font-weight: 400;
+                text-decoration: none;
+                padding: 10px 0;
+                display: inline-block;
+            }
+        }
     }
 }
 
 .header-area {
     padding-top: 100px;
-    @include tablet {
-        padding-top: 50px;
-    }
+
     .main-title {
         @include tablet {
+            text-align: center;
+        }
+        @include all-phone {
             text-align: center;
         }
         span {
@@ -40,6 +144,9 @@
         padding-top: 50px;
         .section-title {
             @include tablet {
+                text-align: center;
+            }
+            @include all-phone {
                 text-align: center;
             }
             span {
@@ -65,6 +172,14 @@
                     margin: auto;
                 }
             }
+            
+            @include all-phone {
+                padding: 150px 0;
+                background-image: url('../images/header-mobile-bg.png');
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: contain;
+            }
         }
     }
 }
@@ -86,6 +201,9 @@
     @include tablet {
         margin-top: 50px;
     }
+    @include all-phone {
+        margin-top: 100px;
+    }
 
     .workcloud-image {
         @include tablet {
@@ -99,6 +217,14 @@
                 margin: auto;
             }
         }
+        
+        @include all-phone {
+            padding: 150px 0;
+            background-image: url('../images/workcloud-mobile-bg.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+        }
     }
 
     .workcloud-content {
@@ -110,6 +236,10 @@
         .section-title {
             @include tablet {
                 margin-top: 50px;
+                text-align: center;
+            }
+            @include all-phone {
+                margin-top: 100px;
                 text-align: center;
             }
         }
@@ -133,6 +263,9 @@
     @include tablet {
         margin-top: 0;
     }
+    @include all-phone {
+        margin-top: 100px;
+    }
 
     .easyonepage-content {
         ul.list-items,
@@ -143,6 +276,10 @@
         .section-title {
             @include tablet {
                 text-align: center;
+            }
+            @include all-phone {
+                text-align: center;
+                margin-top: 50px;
             }
         }
     }
@@ -159,6 +296,13 @@
                 width: 80%;
                 margin: auto;
             }
+        }
+        @include all-phone {
+            padding: 160px 0;
+            background-image: url('../images/easyonepage-mobile-bg.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
         }
     }
 }
@@ -180,6 +324,9 @@
     @include tablet {
         margin-top: 0px;
     }
+    @include all-phone {
+        margin-top: 100px;
+    }
 
     .connecting-content {
         ul.list-items,
@@ -191,6 +338,10 @@
             @include tablet {
                 text-align: center;
                 margin-top: 30px;
+            }
+            @include all-phone {
+                text-align: center;
+                margin-top: 50px;
             }
         }
     }
@@ -207,6 +358,13 @@
                 width: 80%;
                 margin: auto;
             }
+        }
+        @include all-phone {
+            padding: 190px 0;
+            background-image: url('../images/connecting-mobile-bg.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
         }
     }
 }
@@ -230,10 +388,16 @@
     @include tablet {
         margin-top: 200px;
     }
+    @include all-phone {
+        margin-top: 200px;
+    }
     span {
         text-transform: uppercase;
         position: relative;
         @include tablet {
+            display: none;
+        }
+        @include all-phone {
             display: none;
         }
         &::before {
