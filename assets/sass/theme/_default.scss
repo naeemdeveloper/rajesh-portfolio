@@ -54,3 +54,12 @@
         display: none;
     }
 }
+
+.paddingX-50 {
+    @include landscape-phone {
+        padding: 0 50px;
+    }
+    @include portrait-phone {
+        padding: 0 50px;
+    }
+}

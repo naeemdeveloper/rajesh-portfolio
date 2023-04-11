@@ -5,7 +5,8 @@ author: rajesh
 author uri: 
 version: 1.0.0
 -------------------------------------------------------------*/
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Major+Mono+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;700&display=swap");
 /* author css */
 body {
   margin: 0;
@@ -13,7 +14,7 @@ body {
   background-color: #1D1D20;
   font-size: 20px;
   font-family: "Inter", sans-serif;
-  font-weight: 400; }
+  font-weight: 300; }
 
 h1 {
   font-size: 70px; }
@@ -23,12 +24,18 @@ h1 {
   @media (max-width: 575.98px) {
     h1 {
       font-size: 40px; } }
+  h1 span {
+    font-family: "Inter", sans-serif;
+    font-weight: 100; }
 
 h2 {
   font-size: 50px; }
   @media (max-width: 767.98px) {
     h2 {
       font-size: 36px; } }
+  h2 span {
+    font-family: "Inter", sans-serif;
+    font-weight: 100; }
 
 h3 {
   font-size: 30px; }
@@ -229,6 +236,14 @@ nav .main-menu li {
   .all-desktop-hide {
     display: none; } }
 
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .paddingX-50 {
+    padding: 0 50px; } }
+
+@media (max-width: 575.98px) {
+  .paddingX-50 {
+    padding: 0 50px; } }
+
 /* landing */
 .menu-area {
   padding-top: 50px; }
@@ -321,12 +336,12 @@ nav .main-menu li {
     top: 0;
     left: 0;
     width: 100%;
-    height: 0;
+    height: 100%;
     background-color: #1D1D20;
     text-align: center;
-    -webkit-transition: all 0.3s ease-in;
-    -o-transition: all 0.3s ease-in;
-    transition: all 0.3s ease-in;
+    -webkit-transition: .2s;
+    -o-transition: .2s;
+    transition: .2s;
     opacity: 0;
     visibility: hidden;
     z-index: 999; }
@@ -339,15 +354,45 @@ nav .main-menu li {
       visibility: visible; }
     .menu-area .mobile-menu li {
       position: relative;
-      top: 40%; }
+      top: 35%; }
       .menu-area .mobile-menu li a {
         color: #ffffff;
         font-size: 24px;
         text-transform: uppercase;
-        font-weight: 400;
+        font-weight: 200;
         text-decoration: none;
         padding: 10px 0;
         display: inline-block; }
+        .menu-area .mobile-menu li a span {
+          font-family: "Major Mono Display", monospace;
+          font-weight: 400; }
+    .menu-area .mobile-menu ul.page-links {
+      position: absolute;
+      left: 50%;
+      bottom: 100px;
+      -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      transform: translateX(-50%); }
+      .menu-area .mobile-menu ul.page-links li {
+        display: inline-block;
+        margin: 0 20px; }
+        .menu-area .mobile-menu ul.page-links li a {
+          text-transform: uppercase;
+          position: relative;
+          color: #ffffff;
+          text-decoration: none; }
+          .menu-area .mobile-menu ul.page-links li a::before {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            -webkit-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+            width: 15px;
+            height: 15px;
+            background-color: #ffffff;
+            border-radius: 50%; }
 
 .header-area {
   padding-top: 100px; }
@@ -357,9 +402,6 @@ nav .main-menu li {
   @media (max-width: 767.98px) {
     .header-area .main-title {
       text-align: center; } }
-  .header-area .main-title span {
-    font-family: "Inter", sans-serif;
-    font-weight: 100; }
   .header-area .header-content {
     padding-top: 50px; }
     @media (min-width: 768px) and (max-width: 991.98px) {
@@ -368,9 +410,6 @@ nav .main-menu li {
     @media (max-width: 767.98px) {
       .header-area .header-content .section-title {
         text-align: center; } }
-    .header-area .header-content .section-title span {
-      font-family: "Inter", sans-serif;
-      font-weight: 100; }
     .header-area .header-content ul.list-items,
     .header-area .header-content p {
       margin-top: 40px; }
@@ -558,16 +597,18 @@ nav .main-menu li {
   @media (max-width: 767.98px) {
     .footer-area {
       margin-top: 200px; } }
-  .footer-area span {
+  .footer-area a {
     text-transform: uppercase;
-    position: relative; }
+    position: relative;
+    color: #ffffff;
+    text-decoration: none; }
     @media (min-width: 768px) and (max-width: 991.98px) {
-      .footer-area span {
+      .footer-area a {
         display: none; } }
     @media (max-width: 767.98px) {
-      .footer-area span {
+      .footer-area a {
         display: none; } }
-    .footer-area span::before {
+    .footer-area a::before {
       content: '';
       position: absolute;
       bottom: -20px;

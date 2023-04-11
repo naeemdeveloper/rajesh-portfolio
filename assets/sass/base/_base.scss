@@ -5,7 +5,7 @@ body {
     background-color: $black-color;
     font-size: 20px;
     font-family: $theme-font;
-    font-weight: 400;
+    font-weight: 300;
 }
 
 h1 {
@@ -16,12 +16,22 @@ h1 {
     @include portrait-phone {
         font-size: 40px;
     }
+
+    span {
+        font-family: $theme-font;
+        font-weight: 100;
+    }
 }
 
 h2 {
     font-size: 50px;
     @include all-phone {
         font-size: 36px;
+    }
+
+    span {
+        font-family: $theme-font;
+        font-weight: 100;
     }
 }
 
