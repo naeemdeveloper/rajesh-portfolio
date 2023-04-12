@@ -12,9 +12,9 @@ body {
   margin: 0;
   color: #ffffff;
   background-color: #1D1D20;
-  font-size: 20px;
+  font-size: 20px !important;
   font-family: "Inter", sans-serif;
-  font-weight: 300; }
+  font-weight: 200; }
 
 h1 {
   font-size: 70px; }
@@ -89,28 +89,6 @@ img {
   width: 100%;
   height: auto;
   display: block; }
-
-/* navbar */
-nav .main-menu li {
-  display: block;
-  position: relative;
-  margin-right: 0;
-  line-height: 1.2;
-  z-index: 1; }
-  nav .main-menu li a {
-    color: #ffffff;
-    padding: 2px 0;
-    font-weight: 400;
-    display: inline-block;
-    font-size: 20px;
-    text-transform: uppercase;
-    text-decoration: none; }
-  @media (min-width: 992px) {
-    nav .main-menu li:hover a {
-      color: #ffffff; } }
-  @media (min-width: 992px) and (min-width: 768px) and (max-width: 991.98px) {
-    nav .main-menu li:hover a {
-      color: #ffffff; } }
 
 /* preloader */
 #preloader {
@@ -323,14 +301,34 @@ nav .main-menu li {
       display: block; }
       .menu-area .main-menu li a {
         font-size: 20px;
-        font-weight: 400;
+        font-weight: 200;
         text-decoration: none;
         text-transform: uppercase;
         color: #ffffff;
-        display: block;
-        -webkit-transition: .2s;
-        -o-transition: .2s;
-        transition: .2s; }
+        display: inline-block;
+        -webkit-transition: all 0.3s ease-in;
+        -o-transition: all 0.3s ease-in;
+        transition: all 0.3s ease-in;
+        position: relative; }
+        .menu-area .main-menu li a::before {
+          content: '';
+          position: absolute;
+          top: 15px;
+          left: -30px;
+          width: 0;
+          height: 1px;
+          background-color: #ffffff;
+          -webkit-transition: all 0.3s ease-in;
+          -o-transition: all 0.3s ease-in;
+          transition: all 0.3s ease-in;
+          opacity: 0;
+          visibility: hidden; }
+        .menu-area .main-menu li a:hover {
+          padding-left: 20px; }
+          .menu-area .main-menu li a:hover::before {
+            opacity: 1;
+            visibility: visible;
+            width: 35px; }
   .menu-area .mobile-menu {
     position: absolute;
     top: 0;
@@ -619,7 +617,14 @@ nav .main-menu li {
       width: 10px;
       height: 10px;
       background-color: #ffffff;
-      border-radius: 50%; }
+      border-radius: 50%;
+      -webkit-transition: .2s;
+      -o-transition: .2s;
+      transition: .2s; }
+    .footer-area a:hover::before {
+      width: 15px;
+      height: 15px;
+      bottom: -23px; }
   .footer-area .copyright {
     margin-top: 80px; }
     .footer-area .copyright p {

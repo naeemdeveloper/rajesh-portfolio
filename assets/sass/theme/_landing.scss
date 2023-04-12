@@ -76,12 +76,34 @@
             display: block;
             a {
                 font-size: 20px;
-                font-weight: 400;
+                font-weight: 200;
                 text-decoration: none;
                 text-transform: uppercase;
                 color: $white-color;
-                display: block;
-                transition: .2s;
+                display: inline-block;
+                transition: $transition;
+                position: relative;
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 15px;
+                    left: -30px;
+                    width: 0;
+                    height: 1px;
+                    background-color: $white-color;
+                    transition: $transition;
+                    opacity: 0;
+                    visibility: hidden;
+                }
+
+                &:hover {
+                    padding-left: 20px;
+                    &::before {
+                        opacity: 1;
+                        visibility: visible;
+                        width: 35px;
+                    }
+                }
             }
         }
     }
@@ -437,6 +459,15 @@
             height: 10px;
             background-color: $white-color;
             border-radius: 50%;
+            transition: .2s;
+        }
+
+        &:hover {
+            &::before {
+                width: 15px;
+                height: 15px;
+                bottom: -23px;
+            }
         }
     }
 
