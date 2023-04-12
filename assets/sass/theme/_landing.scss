@@ -185,15 +185,28 @@
             display: none;
         }
 
+        @include tablet {
+            padding: 250px 80px 0;
+        }
+
         .title-1 {
             span {
                 font-family: $theme-font;
                 font-weight: 300;
             }
+            @include tablet {
+                font-size: 40px;
+                line-height: 58px;
+            }
         }
         .title-2 {
             margin-top: 100px;
             text-align: right;
+            @include tablet {
+                font-size: 40px;
+                line-height: 58px;
+                margin-top: 0px;
+            }
         }
 
         ul.page-links {
