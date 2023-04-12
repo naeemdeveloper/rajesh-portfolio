@@ -8,9 +8,9 @@
             $(this).toggleClass("active");
         });
 
-        // mobile menu toogle bar
         $(".menu-toggle-bar").on('click', function(){
-            $(".mobile-menu").toggleClass("active");
+            $(".mobile-menu").addClass("active");
+            $(".other-page").toggleClass("active");
         });
 
     });
