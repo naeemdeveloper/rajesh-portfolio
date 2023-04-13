@@ -38,7 +38,7 @@ h2 {
     font-weight: 100; }
 
 h3 {
-  font-size: 30px; }
+  font-size: 32px; }
 
 h4 {
   font-size: 24px; }
@@ -386,7 +386,7 @@ img {
     -webkit-transition: .2s;
     -o-transition: .2s;
     transition: .2s;
-    padding: 150px 50px 0;
+    padding: 120px 50px 0;
     z-index: 999;
     background-image: url("../images/other-page-bg.png");
     background-repeat: no-repeat;
@@ -411,7 +411,7 @@ img {
         font-size: 40px;
         line-height: 58px; } }
     .menu-area .other-page .title-2 {
-      margin-top: 100px;
+      margin-top: 50px;
       text-align: right; }
       @media (min-width: 768px) and (max-width: 991.98px) {
         .menu-area .other-page .title-2 {
@@ -452,13 +452,13 @@ img {
           font-weight: 300;
           color: rgba(255, 255, 255, 0.3);
           position: absolute;
-          top: 90%;
+          top: 100%;
           left: 50%;
           -webkit-transform: translateX(-50%);
           -ms-transform: translateX(-50%);
           transform: translateX(-50%);
           width: 100%;
-          margin-top: 50px; }
+          margin-top: 40px; }
 
 .header-area {
   padding-top: 100px; }
